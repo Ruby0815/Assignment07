@@ -3,7 +3,7 @@ let empForm=document.getElementById('addForm');
 let empTable=document.getElementById('employees');
 // SET A COUNT VARIABLE TO DISPLAY NEXT TO EMPLOYEES HEADER
 let empCount=document.getElementById('empCount');
-
+count=0;
 // ADD EMPLOYEE
 empForm.addEventListener('submit', (e) => {
     // PREVENT FORM SUBMISSION
@@ -58,4 +58,3 @@ empTable.addEventListener('click', (e) => {
         }
     }
 });
-document.getElementById("empCount").textContent = empCount.value = `(${count})`;
